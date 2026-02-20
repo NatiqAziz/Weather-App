@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather-App JS</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="shortcut icon"
+      href="https://toppng.com/uploads/preview/weather-icon-ios-7-11530957417asfcg4ktnv.png"
+      type="image/x-icon"
+    />
+  </head>
+  <body>
+    <div class="nav">
+      <h1>Weather App</h1>
+    </div>
+    <div class="belowNav">
+      <div class="search">
+        <input type="text" placeholder="Type City" class="input" />
+        <i class="ri-search-line" id="searchIcon"></i>
+      </div>
+    </div>
+
+    <div class="info">
+      <div id="name" class="column">
+        <h2>City</h2>
+        <p>0</p>
+      </div>
+      <div id="temp" class="column">
+        <h2>Temp</h2>
+        <p>0</p>
+      </div>
+      <div id="condition" class="column">
+        <h2>Condition</h2>
+        <div class="cond">
+          <p id="condPara">0</p>
+          <img
+            src="https://png.pngtree.com/png-vector/20210225/ourmid/pngtree-little-fresh-blue-clouds-png-image_2951468.jpg"
+            alt=""
+            id="condImg"
+          />
+        </div>
+      </div>
+      <div id="humidity" class="column">
+        <h2>Humidity</h2>
+        <p>0</p>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
