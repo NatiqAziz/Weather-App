@@ -102,7 +102,6 @@ i {
     position: absolute;
     cursor: pointer;
     top: 20%;
-    transform: translate(-2dfdfd34);
   }
 
   .search input {
@@ -161,7 +160,6 @@ i {
     cursor: pointer;
     top: 20%;
     right: 2vw;
-    transform: translate(-2dfdfd34);
   }
 
   .nav {

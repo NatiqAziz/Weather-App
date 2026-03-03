@@ -1,4 +1,8 @@
-const url = `https://api.openweathermap.org/data/2.5/weather?q=city&appid=[yourapi]&units=metric`;
+// Get your free API key from: https://openweathermap.org/api
+// Replace YOUR_API_HERE with your actual key
+
+
+const API_KEY = "YOUR_API_HERE";
 
 const input = document.querySelector(".input");
 const btn = document.querySelector("#searchIcon");
@@ -12,7 +16,7 @@ const info = document.querySelector(".info");
 const getWeather = async (city) => {
   try {
     let data = await fetch(
-      `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=[yourapi]&units=metric`,
+      `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${API_KEY}&units=metric`,
     );
 
     if (!data.ok) {
